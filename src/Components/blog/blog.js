@@ -38,7 +38,11 @@ function Blog() {
             <Blogcontent />
             <Blogcontent />
             <Blogcontent />
-
+            <Blogcontent />
+            <Blogcontent />
+            <Blogcontent />
+            <Blogcontent />
+            <Blogcontent />
           </div>
         </div>
       </div>

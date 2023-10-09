@@ -10,15 +10,6 @@
   max-width: 1920px;
   width: 100%;
   
-
-  .rightbackgroundwhite {
-    z-index: -1;
-    position: absolute;
-    top:auto;
-    right: 0;
-    bottom: 0;
-  }
-
   .container {
     max-width: 1640px;
     width: 100%;
