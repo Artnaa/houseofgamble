@@ -1,0 +1,51 @@
+.menu {
+  align-items: center;
+  color: white;
+  height: fit-content;
+  display: flex;
+  margin: 30px 0;
+  flex-direction: column;
+  overflow: hidden;
+}
+.menu .menu_list {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 8px;
+}
+.menu .menu_register {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 30px;
+}
+.menu button {
+  width: 300px;
+  padding: 13px 20px;
+  align-items: center;
+  border-radius: 28px;
+  border: 2px solid var(--main-blue-478-bf-9, #478BF9);
+  background: var(--main-navy-blue-110-a-1-d, #110A1D);
+  color: var(--main-clean-white-ffffff, #FFF);
+  cursor: pointer;
+  font-family: Lexend;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media (min-width: 1050px) {
+  .menu {
+    display: none;
+  }
+  .menu .menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+  .menu .menu.open {
+    height: auto;
+    /* Вы можете указать конкретную высоту */
+    transition: height 3s ease-out;
+  }
+}
