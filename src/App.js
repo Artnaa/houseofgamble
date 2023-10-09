@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="app">
-      <img src="./icons/backgroundgradientright1.png" alt="background" className='rightbackgroundwhite' />
+      {/* <img src="./icons/backgroundgradientright1.png" alt="background" className='rightbackgroundwhite' /> */}
       <div className='container'>
         <Nav toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
         {isMenuOpen && <Menu />}
