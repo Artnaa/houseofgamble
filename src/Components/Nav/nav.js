@@ -1,9 +1,15 @@
 import Burger from '../Burger/burger'
+import Menu from '../menu/menu'
+import { useState } from 'react';
 import './nav.css'
 
-function Nav() {
+function Nav({ toggleMenu, isMenuOpen }) {
+  
+  
   return (
     <nav>
+      <Burger toggleMenu={toggleMenu} />
+      {isMenuOpen}
       <h1>Logo</h1>
 
       <div>

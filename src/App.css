@@ -1,6 +1,5 @@
 .app {
   z-index: 999;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,16 +15,11 @@
     position: absolute;
     right: 0;
     bottom: 0;
-
   }
 
   .container {
-
-    position: relative;
     max-width: 1640px;
     width: 100%;
     font-family: 'Lexend', sans-serif;
-
-    
   }
 }
