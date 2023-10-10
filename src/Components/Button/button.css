@@ -6,3 +6,6 @@ button {
   color: #FFF;
   background: var(--main-navy-blue-110-a-1-d, #110A1D);
 }
+button:hover {
+  background: red;
+}

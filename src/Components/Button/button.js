@@ -1,12 +1,26 @@
-import "./button.css"
+import React, { useState } from 'react';
+import './button.css';
 
-  function Button(props) {
-  
+function Button({ style, hoverStyle, text }) {
+  const [isHovered, setIsHovered] = useState(false);
 
-    return (
-      <button style={props.style}>
-        {props.text}
-      </button>
-    )
-  }
-  export default Button
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  return (
+    <button
+      style={isHovered ? { ...style, ...hoverStyle } : style}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      {text}
+    </button>
+  );
+}
+
+export default Button;

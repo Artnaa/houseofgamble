@@ -13,11 +13,30 @@
   color: white;
   gap: 8px;
 }
+.menu .menu_list button {
+  transition: 0.5s;
+}
+.menu .menu_list button:hover {
+  background-color: #478BF9;
+}
 .menu .menu_register {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-top: 30px;
+}
+.menu .menu_register :nth-child(2) {
+  background-color: #478BF9;
+}
+.menu .menu_register button {
+  transition: 0.5s;
+}
+.menu .menu_register button:hover {
+  background-color: #478BF9;
+}
+.menu .menu_register :nth-child(2):hover {
+  background: #abc5fb;
+  color: #478BF9;
 }
 .menu button {
   width: 300px;
@@ -45,7 +64,6 @@
   }
   .menu .menu.open {
     height: auto;
-    /* Вы можете указать конкретную высоту */
     transition: height 3s ease-out;
   }
 }

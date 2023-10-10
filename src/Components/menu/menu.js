@@ -2,11 +2,10 @@ import React from 'react';
 import Button from '../Button/button';
 import './menu.css'
 
-function Menu() {
+function Menu(props) {
   const bluebuttonStyle = {
     borderRadius: '24px',
     background: 'var(--main-blue-478-bf-9, #478BF9)',
-
   };
   return (
     <div className="menu">
@@ -20,8 +19,9 @@ function Menu() {
       </div>
       <div className="menu_register">
         <button>Log in</button>
-        <Button style={bluebuttonStyle}
-          text="Sign up" />
+        {/* <Button  style={bluebuttonStyle}
+          text="Sign up"  /> */}
+          <button>Sign up</button>
       </div>
     </div>
   );

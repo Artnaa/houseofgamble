@@ -7,7 +7,7 @@
   transition: 0.3s;
   position: absolute;
   right: 12px;
-  top: 43px;
+  top: 40px;
   width: 30px;
   height: 25px;
   display: inline-block;
@@ -29,7 +29,7 @@
     opacity: 1;
   }
   .burger.open .bar .bar_icon :nth-child(2) {
-    transform: rotate(-45deg) translate(0px, -5px);
+    transform: rotate(-45deg) translate(0px, -6px);
     transition: 0.6s;
     opacity: 1;
     transition: transform 0.6s, opacity 0.6s;
